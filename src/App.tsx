@@ -2,12 +2,14 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
-import { GlassNavbar } from "@/components/GlassNavbar";
-import LandingPage from "./Pages/LandingPage";
-import AuthPage from "./Pages/Authpages";
-import ServicesPage from "./Pages/ServicesPages";
-import DashboardPage from "../DashboardPage";
-import NotFound from "./Pages/Notfound";
+import { GlassNavbar } from "@/components/glassnavbar";
+
+// FIXED IMPORTS:
+import LandingPage from "./Pages/LandingPage";    // Folder is "Pages"
+import AuthPage from "./Pages/Authpages";        // File is "Authpages.tsx"
+import ServicesPage from "./Pages/ServicesPages"; // File is "ServicesPages.tsx"
+import DashboardPage from "../DashboardPage";      // File is in "src/DashboardPage.tsx"
+import NotFound from "./Pages/Notfound";          // File is "Notfound.tsx"
 import { useEffect } from "react";
 import { useAppStore } from "./lib/store";
 
