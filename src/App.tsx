@@ -3,11 +3,11 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { GlassNavbar } from "@/components/GlassNavbar";
-import LandingPage from "./pages/LandingPage";
-import AuthPage from "./pages/AuthPage";
-import ServicesPage from "./pages/ServicesPage";
-import DashboardPage from "./pages/DashboardPage";
-import NotFound from "./pages/NotFound";
+import LandingPage from "./Pages/LandingPage";
+import AuthPage from "./Pages/Authpages";
+import ServicesPage from "./Pages/ServicesPages";
+import DashboardPage from "../DashboardPage";
+import NotFound from "./Pages/Notfound";
 import { useEffect } from "react";
 import { useAppStore } from "./lib/store";
 
